@@ -1,0 +1,22 @@
+<p>get-all-loans works!</p>
+
+<table border="5">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>loanAmount</th>
+        <th>dateOfLoan</th>
+        <th>Tenure</th>
+         <th>RateOFIntrest</th>
+    </tr>
+    <tr *ngFor="let e of Loan">
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.amount}}</td>
+        <td>{{e.dateofLoan}}</td>
+          <td>{{e.tenure}}</td>
+        <td>{{e.rateofIntrest}}</td>
+       
+
+    </tr>
+</table>

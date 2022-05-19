@@ -1,0 +1,39 @@
+<p>add-loan works!</p>
+
+<h2>Add</h2>
+<hr>
+<form [formGroup]="loanForm">
+    <table border="5">
+        <tr>
+            <td><label>Loan Id</label></td>
+            <td><input formControlName="id"></td>
+        </tr>
+        <tr>
+            <td><label>Loan Custoner Name</label></td>
+
+            <td><input formControlName="name"></td>
+        </tr>
+        <tr>
+            <td><label>Loan Amount</label></td>
+
+            <td><input formControlName="amount"></td>
+        </tr>
+        <tr>
+            <td><label>Date of Loan</label></td>
+
+            <td><input formControlName="dateofLoan"></td>
+        </tr>
+        <tr>
+            <td><label>Tenure</label></td>
+            <td><input formControlName="tenure"></td>
+        </tr>
+        <tr>
+            <td><label>Rate of Interest</label></td>
+            <td><input formControlName="rateofIntrest"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" style="background-color:rgb(135, 235, 152)" (click)="add()">ADD</button></td>
+        </tr>
+    </table>
+</form>
+<hr>
